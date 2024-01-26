@@ -160,7 +160,7 @@ sudo apt-get install helm
 helm upgrade --install ingress-nginx ingress-nginx --repo https://kubernetes.github.io/ingress-nginx --namespace ingress-nginx --create-namespace --set controller.hostPort.enabled=true 
 ```
 2. tgz安装
-   1. 下载 ingress-nginx-4.9.0.tgz到本地并上传到服务器
+   1. 下载 ingress-nginx-4.2.5.tgz到本地并上传到服务器
    2. 解压 `tar -zxvf ingress-nginx-4.2.5.tgz && cd ingress-nginx`
    3. 修改 values.yaml 文件（项目中的tgz是修改好的，可以直接使用，无需修改）
       1. 修改 ingress-nginx-contorller 的镜像仓库地址，默认是 k8s.gcr.io 国内无法访问，这里用到github上一个同步 ingress-nginx-contorller 的仓库 docker.io/willdockerhub/ingress-nginx-controller,并注释掉digest信息
