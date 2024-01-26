@@ -250,6 +250,7 @@ helm upgrade --install ingress-nginx ingress-nginx --repo https://kubernetes.git
 ```
 1. 安装证书到期提醒(使用项目中的cluster-issure.yml)
 ```shell
+## 需要替换文件中的email
 kubectl apply -f cluster-issure.yml
 ```
 
